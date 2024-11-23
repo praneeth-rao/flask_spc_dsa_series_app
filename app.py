@@ -55,11 +55,11 @@ def login():
       return redirect(url_for('main'))
     else:
       flash('Invalid credentials. Please try again.')
-      return redirect(url_for('login'))
+      return redirect(url_for('leaderboard'))
   return render_template('login.html')
 
 @app.route('/leaderboard')
-def main():
+def leaderboard():
   if 'user_id' not in session:
     flash('Please log in to access this page.')
     return redirect(url_for('login'))
