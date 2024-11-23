@@ -19,7 +19,7 @@ class User(db.Model):
 @app.route('/')
 def home():
     if 'user_id' in session:
-        return redirect(url_for('main'))
+        return redirect(url_for('leaderboard'))
     return redirect(url_for('login'))
 
 @app.route('/register', methods=['GET', 'POST'])
