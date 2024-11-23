@@ -1,11 +1,41 @@
 {% extends "base.html" %} {% block title %}Register{% endblock %} {% block
 content %}
-<h2>Register</h2>
-<form method="POST" action="/register">
-  <label for="username">Username:</label>
-  <input type="text" name="username" required />
-  <label for="password">Password:</label>
-  <input type="password" name="password" required />
-  <button type="submit">Register</button>
-</form>
+<div class="container">
+    <h4 class="display-6">Customer Registration</h4>
+    <form
+      class="row g-3 was-validated"
+      method="POST" action="/register"
+    >
+      <div class="col-md-6 form-floating mb-3">
+        <input
+          type="email"
+          class="form-control"
+          id="username"
+          v-model="email"
+          pattern="^[a-z0-9]+(\.[a-z0-9]+)*@gmail\.com$"
+          placeholder="name@gmail.com"
+          required
+        />
+        <label for="username" class="form-label">Email</label>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please enter valid email.</div>
+      </div>
+      <div class="col-md-6 form-floating mb-3">
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          v-model="password"
+          pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&amp;#]).{8,}"
+          placeholder="Enter password"
+          required
+        />
+        <label for="password" class="form-label">Password</label>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please enter valid Password.</div>
+      </div>
+      <button type="reset" class="btn btn-primary px-3">RESET</button>
+      <button type="submit" class="btn btn-primary px-3">SUBMIT</button>
+    </form>
+  </div>
 {% endblock %}
