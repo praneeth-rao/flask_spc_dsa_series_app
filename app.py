@@ -58,7 +58,7 @@ def login():
       return redirect(url_for('login'))
   return render_template('login.html')
 
-@app.route('/main')
+@app.route('/leaderboard')
 def main():
   if 'user_id' not in session:
     flash('Please log in to access this page.')
