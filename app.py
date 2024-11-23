@@ -52,7 +52,7 @@ def login():
     if user and check_password_hash(user.password, password):
       session['user_id'] = user.id
       session['username'] = user.username
-      return redirect(url_for('main'))
+      return redirect(url_for('leaderboard'))
     else:
       flash('Invalid credentials. Please try again.')
       return redirect(url_for('leaderboard'))
