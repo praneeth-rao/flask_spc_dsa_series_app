@@ -1,16 +1,686 @@
 {
-  "john_doe": {
-    "password": "password123",
-    "dashboard_data": {
-      "greeting": "Hello, John!",
-      "activity": "You have 3 new messages."
+    "raunakdey_07": {
+        "password": "22f3002175",
+        "dashboard_data": {
+            "Rank": 1,
+            "Name": "Raunak Dey",
+            "Email": "22f3002175@ds.study.iitm.ac.in",
+            "Q1 Score": 100.0,
+            "Q1 Run Time(sec)": 32.0,
+            "Q1 Score.1": 100.0,
+            "Q1 Run Time(sec).1": 28.0,
+            "Q1 Score.2": 88.89,
+            "Q1 Run Time(sec).2": 13.0,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 22.0,
+            "Total Score": 388.89,
+            "Time(min)": "1:32:34"
+        }
+    },
+    "srimadhavvarma": {
+        "password": "23f1001681",
+        "dashboard_data": {
+            "Rank": 2,
+            "Name": "Srivastavaya Srimadhav Varma",
+            "Email": "23f1001681@ds.study.iitm.ac.in",
+            "Q1 Score": 100.0,
+            "Q1 Run Time(sec)": 8.0,
+            "Q1 Score.1": 100.0,
+            "Q1 Run Time(sec).1": 70.0,
+            "Q1 Score.2": 88.89,
+            "Q1 Run Time(sec).2": 66.0,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 52.0,
+            "Total Score": 388.89,
+            "Time(min)": "3:13:53"
+        }
+    },
+    "21f3001823": {
+        "password": "21f3001823",
+        "dashboard_data": {
+            "Rank": 3,
+            "Name": "Rishabh Indoria",
+            "Email": "21f3001823@ds.study.iitm.ac.in",
+            "Q1 Score": 100.0,
+            "Q1 Run Time(sec)": 38.0,
+            "Q1 Score.1": 100.0,
+            "Q1 Run Time(sec).1": 56.0,
+            "Q1 Score.2": 77.78,
+            "Q1 Run Time(sec).2": 74.0,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 20.0,
+            "Total Score": 377.78,
+            "Time(min)": "3:06:11"
+        }
+    },
+    "dhanaanjana_off1": {
+        "password": "23f2005233",
+        "dashboard_data": {
+            "Rank": 4,
+            "Name": "Dhana Anjana S",
+            "Email": "23f2005233@ds.study.iitm.ac.in",
+            "Q1 Score": 100.0,
+            "Q1 Run Time(sec)": 82.0,
+            "Q1 Score.1": 100.0,
+            "Q1 Run Time(sec).1": 46.0,
+            "Q1 Score.2": 0.0,
+            "Q1 Run Time(sec).2": 31.0,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 41.0,
+            "Total Score": 300.0,
+            "Time(min)": "2:48:38"
+        }
+    },
+    "Hari_pratap": {
+        "password": "22f3001353",
+        "dashboard_data": {
+            "Rank": 5,
+            "Name": "Hari Pratap Maurya",
+            "Email": "22f3001353@ds.study.iitm.ac.in",
+            "Q1 Score": NaN,
+            "Q1 Run Time(sec)": NaN,
+            "Q1 Score.1": 100.0,
+            "Q1 Run Time(sec).1": 76.0,
+            "Q1 Score.2": 88.89,
+            "Q1 Run Time(sec).2": 88.0,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 63.0,
+            "Total Score": 288.89,
+            "Time(min)": "3:44:49"
+        }
+    },
+    "21f3002494": {
+        "password": "21f3002494",
+        "dashboard_data": {
+            "Rank": 6,
+            "Name": "Koushik Ram",
+            "Email": "21f3002494@ds.study.iitm.ac.in",
+            "Q1 Score": 77.78,
+            "Q1 Run Time(sec)": 59.0,
+            "Q1 Score.1": 100.0,
+            "Q1 Run Time(sec).1": 84.0,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 49.0,
+            "Total Score": 277.78,
+            "Time(min)": "3:11:42"
+        }
+    },
+    "23f2002819": {
+        "password": "23f2002819",
+        "dashboard_data": {
+            "Rank": 7,
+            "Name": "Soumyodip Bhattacharya",
+            "Email": "23f2002819@ds.study.iitm.ac.in",
+            "Q1 Score": 44.44,
+            "Q1 Run Time(sec)": 26.0,
+            "Q1 Score.1": 100.0,
+            "Q1 Run Time(sec).1": 30.0,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 24.0,
+            "Total Score": 244.44,
+            "Time(min)": "1:18:33"
+        }
+    },
+    "ishikabhatnagar2": {
+        "password": "23f1002793",
+        "dashboard_data": {
+            "Rank": 8,
+            "Name": "Ishika Bhatnagar",
+            "Email": "23f1002793@ds.study.iitm.ac.in",
+            "Q1 Score": 100.0,
+            "Q1 Run Time(sec)": 66.0,
+            "Q1 Score.1": 36.36,
+            "Q1 Run Time(sec).1": 30.0,
+            "Q1 Score.2": 0.0,
+            "Q1 Run Time(sec).2": 39.0,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 54.0,
+            "Total Score": 236.36,
+            "Time(min)": "2:28:46"
+        }
+    },
+    "21f2000602": {
+        "password": "21f2000602",
+        "dashboard_data": {
+            "Rank": 9,
+            "Name": "Snehil Nair",
+            "Email": "21f2000602@ds.study.iitm.ac.in",
+            "Q1 Score": 77.78,
+            "Q1 Run Time(sec)": 63.0,
+            "Q1 Score.1": 54.55,
+            "Q1 Run Time(sec).1": 78.0,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 56.0,
+            "Total Score": 232.33,
+            "Time(min)": "3:16:21"
+        }
+    },
+    "sonikabaimeena64": {
+        "password": "23f3004046",
+        "dashboard_data": {
+            "Rank": 10,
+            "Name": "Sonika Bai Meena",
+            "Email": "23f3004046@ds.study.iitm.ac.in",
+            "Q1 Score": 100.0,
+            "Q1 Run Time(sec)": 76.0,
+            "Q1 Score.1": 18.18,
+            "Q1 Run Time(sec).1": 70.0,
+            "Q1 Score.2": 0.0,
+            "Q1 Run Time(sec).2": 59.0,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 68.0,
+            "Total Score": 218.18,
+            "Time(min)": "3:33:22"
+        }
+    },
+    "Lucky_fear_50": {
+        "password": "23f2002666",
+        "dashboard_data": {
+            "Rank": 11,
+            "Name": "Shahil Arya",
+            "Email": "23f2002666@ds.study.iitm.ac.in",
+            "Q1 Score": 77.78,
+            "Q1 Run Time(sec)": 36.0,
+            "Q1 Score.1": 36.36,
+            "Q1 Run Time(sec).1": 65.0,
+            "Q1 Score.2": 0.0,
+            "Q1 Run Time(sec).2": 47.0,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 15.0,
+            "Total Score": 214.14,
+            "Time(min)": "1:54:32"
+        }
+    },
+    "23f2005381": {
+        "password": "23f2005381",
+        "dashboard_data": {
+            "Rank": 12,
+            "Name": "subrat tiwari",
+            "Email": "23f2005381@ds.study.iitm.ac.in",
+            "Q1 Score": 77.78,
+            "Q1 Run Time(sec)": 60.0,
+            "Q1 Score.1": 36.36,
+            "Q1 Run Time(sec).1": 56.0,
+            "Q1 Score.2": 0.0,
+            "Q1 Run Time(sec).2": 30.0,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 45.0,
+            "Total Score": 214.14,
+            "Time(min)": "2:39:16"
+        }
+    },
+    "damruthav": {
+        "password": "22f3000100",
+        "dashboard_data": {
+            "Rank": 13,
+            "Name": "DINAVAHI AMRUTA VARSHINI",
+            "Email": "22f3000100@ds.study.iitm.ac.in",
+            "Q1 Score": 100.0,
+            "Q1 Run Time(sec)": 21.0,
+            "Q1 Score.1": NaN,
+            "Q1 Run Time(sec).1": NaN,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 43.0,
+            "Total Score": 200.0,
+            "Time(min)": "1:03:39"
+        }
+    },
+    "21f1004971": {
+        "password": "21f1004971",
+        "dashboard_data": {
+            "Rank": 14,
+            "Name": "Pratyay Piyush Mishra",
+            "Email": "21f1004971@ds.study.iitm.ac.in",
+            "Q1 Score": 44.44,
+            "Q1 Run Time(sec)": 77.0,
+            "Q1 Score.1": 54.55,
+            "Q1 Run Time(sec).1": 89.0,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 50.0,
+            "Total Score": 198.99,
+            "Time(min)": "3:34:23"
+        }
+    },
+    "gsaisaatvik": {
+        "password": "23f3001357",
+        "dashboard_data": {
+            "Rank": 15,
+            "Name": "Gunturi Sai Saatvik",
+            "Email": "23f3001357@ds.study.iitm.ac.in",
+            "Q1 Score": 77.78,
+            "Q1 Run Time(sec)": 56.0,
+            "Q1 Score.1": 100.0,
+            "Q1 Run Time(sec).1": 89.0,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 20.0,
+            "Q1 Run Time(sec).3": 84.0,
+            "Total Score": 197.78,
+            "Time(min)": "3:47:56"
+        }
+    },
+    "22f2001074": {
+        "password": "22f2001074",
+        "dashboard_data": {
+            "Rank": 16,
+            "Name": "Kaustubha Ram P",
+            "Email": "22f2001074@ds.study.iitm.ac.in",
+            "Q1 Score": 77.78,
+            "Q1 Run Time(sec)": 89.0,
+            "Q1 Score.1": NaN,
+            "Q1 Run Time(sec).1": NaN,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 30.0,
+            "Total Score": 177.78,
+            "Time(min)": "49:57:00"
+        }
+    },
+    "jawatkars": {
+        "password": "23f3001472",
+        "dashboard_data": {
+            "Rank": 17,
+            "Name": "Sakshi Jawatkar",
+            "Email": "23f3001472@ds.study.iitm.ac.in",
+            "Q1 Score": 77.78,
+            "Q1 Run Time(sec)": 16.0,
+            "Q1 Score.1": NaN,
+            "Q1 Run Time(sec).1": NaN,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 35.0,
+            "Total Score": 177.78,
+            "Time(min)": "1:57:07"
+        }
+    },
+    "vineeth_karuthe1": {
+        "password": "24f1002841",
+        "dashboard_data": {
+            "Rank": 18,
+            "Name": "Vineeth K M",
+            "Email": "24f1002841@ds.study.iitm.ac.in",
+            "Q1 Score": 44.44,
+            "Q1 Run Time(sec)": 71.0,
+            "Q1 Score.1": 18.18,
+            "Q1 Run Time(sec).1": 75.0,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 26.0,
+            "Total Score": 162.62,
+            "Time(min)": "2:51:26"
+        }
+    },
+    "24f1001623": {
+        "password": "24f1001623",
+        "dashboard_data": {
+            "Rank": 19,
+            "Name": "Pavithra K",
+            "Email": "24f1001623@ds.study.iitm.ac.in",
+            "Q1 Score": NaN,
+            "Q1 Run Time(sec)": NaN,
+            "Q1 Score.1": 100.0,
+            "Q1 Run Time(sec).1": 54.0,
+            "Q1 Score.2": 0.0,
+            "Q1 Run Time(sec).2": 90.0,
+            "Q1 Score.3": 50.0,
+            "Q1 Run Time(sec).3": 84.0,
+            "Total Score": 150.0,
+            "Time(min)": "2:17:21"
+        }
+    },
+    "ArshiniIITM": {
+        "password": "21f3001995",
+        "dashboard_data": {
+            "Rank": 20,
+            "Name": "Arshini Aswath",
+            "Email": "21f3001995@ds.study.iitm.ac.in",
+            "Q1 Score": 22.22,
+            "Q1 Run Time(sec)": 31.0,
+            "Q1 Score.1": 36.36,
+            "Q1 Run Time(sec).1": 25.0,
+            "Q1 Score.2": 0.0,
+            "Q1 Run Time(sec).2": 14.0,
+            "Q1 Score.3": 80.0,
+            "Q1 Run Time(sec).3": 18.0,
+            "Total Score": 138.58,
+            "Time(min)": "1:12:26"
+        }
+    },
+    "kirandwip_info": {
+        "password": "23f2001831",
+        "dashboard_data": {
+            "Rank": 21,
+            "Name": "Kirandwip Paul",
+            "Email": "23f2001831@ds.study.iitm.ac.in",
+            "Q1 Score": 22.22,
+            "Q1 Run Time(sec)": 86.0,
+            "Q1 Score.1": 36.36,
+            "Q1 Run Time(sec).1": 84.0,
+            "Q1 Score.2": 0.0,
+            "Q1 Run Time(sec).2": 78.0,
+            "Q1 Score.3": 70.0,
+            "Q1 Run Time(sec).3": 81.0,
+            "Total Score": 128.58,
+            "Time(min)": "4:08:55"
+        }
+    },
+    "muralisriram23": {
+        "password": "23f2002842",
+        "dashboard_data": {
+            "Rank": 22,
+            "Name": "SRIRAM M",
+            "Email": "23f2002842@ds.study.iitm.ac.in",
+            "Q1 Score": NaN,
+            "Q1 Run Time(sec)": NaN,
+            "Q1 Score.1": NaN,
+            "Q1 Run Time(sec).1": NaN,
+            "Q1 Score.2": 0.0,
+            "Q1 Run Time(sec).2": 14.0,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 73.0,
+            "Total Score": 100.0,
+            "Time(min)": "24:04:00"
+        }
+    },
+    "23f1000668": {
+        "password": "23f1000668",
+        "dashboard_data": {
+            "Rank": 23,
+            "Name": "Baalajee K K",
+            "Email": "23f1000668@ds.study.iitm.ac.in",
+            "Q1 Score": NaN,
+            "Q1 Run Time(sec)": NaN,
+            "Q1 Score.1": NaN,
+            "Q1 Run Time(sec).1": NaN,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 82.0,
+            "Total Score": 100.0,
+            "Time(min)": "30:51:00"
+        }
+    },
+    "23f2004638": {
+        "password": "23f2004638",
+        "dashboard_data": {
+            "Rank": 24,
+            "Name": "Filbert Shawn",
+            "Email": "23f2004638@ds.study.iitm.ac.in",
+            "Q1 Score": NaN,
+            "Q1 Run Time(sec)": NaN,
+            "Q1 Score.1": NaN,
+            "Q1 Run Time(sec).1": NaN,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 83.0,
+            "Total Score": 100.0,
+            "Time(min)": "48:45:00"
+        }
+    },
+    "21f3002602": {
+        "password": "21f3002602",
+        "dashboard_data": {
+            "Rank": 25,
+            "Name": "Mahi Mudgal",
+            "Email": "21f3002602@ds.study.iitm.ac.in",
+            "Q1 Score": NaN,
+            "Q1 Run Time(sec)": NaN,
+            "Q1 Score.1": NaN,
+            "Q1 Run Time(sec).1": NaN,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 25.0,
+            "Total Score": 100.0,
+            "Time(min)": "1:21:52"
+        }
+    },
+    "21f1003868": {
+        "password": "21f1003868",
+        "dashboard_data": {
+            "Rank": 26,
+            "Name": "Bhavya Jain",
+            "Email": "21f1003868@ds.study.iitm.ac.in",
+            "Q1 Score": NaN,
+            "Q1 Run Time(sec)": NaN,
+            "Q1 Score.1": NaN,
+            "Q1 Run Time(sec).1": NaN,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 31.0,
+            "Total Score": 100.0,
+            "Time(min)": "1:22:58"
+        }
+    },
+    "C_Ananya01": {
+        "password": "21f2000372",
+        "dashboard_data": {
+            "Rank": 27,
+            "Name": "Ananya Chakraborty",
+            "Email": "21f2000372@ds.study.iitm.ac.in",
+            "Q1 Score": 100.0,
+            "Q1 Run Time(sec)": 37.0,
+            "Q1 Score.1": 0.0,
+            "Q1 Run Time(sec).1": 79.0,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": NaN,
+            "Q1 Run Time(sec).3": NaN,
+            "Total Score": 100.0,
+            "Time(min)": "1:12:03"
+        }
+    },
+    "deeepak00": {
+        "password": "23f3004133",
+        "dashboard_data": {
+            "Rank": 28,
+            "Name": "Deepak Kumar Maurya",
+            "Email": "23f3004133@ds.study.iitm.ac.in",
+            "Q1 Score": NaN,
+            "Q1 Run Time(sec)": NaN,
+            "Q1 Score.1": NaN,
+            "Q1 Run Time(sec).1": NaN,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 100.0,
+            "Q1 Run Time(sec).3": 49.0,
+            "Total Score": 100.0,
+            "Time(min)": "36:22:00"
+        }
+    },
+    "ankitggr09": {
+        "password": "22f1000875",
+        "dashboard_data": {
+            "Rank": 29,
+            "Name": "Ankit Gangwar",
+            "Email": "22f1000875@ds.study.iitm.ac.in",
+            "Q1 Score": NaN,
+            "Q1 Run Time(sec)": NaN,
+            "Q1 Score.1": 18.18,
+            "Q1 Run Time(sec).1": 88.0,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 80.0,
+            "Q1 Run Time(sec).3": 39.0,
+            "Total Score": 98.18,
+            "Time(min)": "2:06:05"
+        }
+    },
+    "Shradz2011": {
+        "password": "21f1001602",
+        "dashboard_data": {
+            "Rank": 30,
+            "Name": "Shraddha Kajle",
+            "Email": "21f1001602@ds.study.iitm.ac.in",
+            "Q1 Score": NaN,
+            "Q1 Run Time(sec)": NaN,
+            "Q1 Score.1": 36.36,
+            "Q1 Run Time(sec).1": 90.0,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 60.0,
+            "Q1 Run Time(sec).3": 66.0,
+            "Total Score": 96.36,
+            "Time(min)": "2:35:06"
+        }
+    },
+    "Ritam25": {
+        "password": "21f2001145",
+        "dashboard_data": {
+            "Rank": 31,
+            "Name": "Ritam Mondal",
+            "Email": "21f2001145@ds.study.iitm.ac.in",
+            "Q1 Score": 44.44,
+            "Q1 Run Time(sec)": 58.0,
+            "Q1 Score.1": NaN,
+            "Q1 Run Time(sec).1": NaN,
+            "Q1 Score.2": 44.44,
+            "Q1 Run Time(sec).2": 46.0,
+            "Q1 Score.3": NaN,
+            "Q1 Run Time(sec).3": NaN,
+            "Total Score": 88.88,
+            "Time(min)": "1:42:51"
+        }
+    },
+    "23f2000295": {
+        "password": "23f2000295",
+        "dashboard_data": {
+            "Rank": 32,
+            "Name": "Muthu Anushree E",
+            "Email": "23f2000295@ds.study.iitm.ac.in",
+            "Q1 Score": 77.78,
+            "Q1 Run Time(sec)": 79.0,
+            "Q1 Score.1": 0.0,
+            "Q1 Run Time(sec).1": 45.0,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 10.0,
+            "Q1 Run Time(sec).3": 86.0,
+            "Total Score": 87.78,
+            "Time(min)": "2:43:40"
+        }
+    },
+    "21f1006099": {
+        "password": "21f1006099",
+        "dashboard_data": {
+            "Rank": 33,
+            "Name": "Vishwa Mohan Pandey",
+            "Email": "21f1006099@ds.study.iitm.ac.in",
+            "Q1 Score": NaN,
+            "Q1 Run Time(sec)": NaN,
+            "Q1 Score.1": NaN,
+            "Q1 Run Time(sec).1": NaN,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 80.0,
+            "Q1 Run Time(sec).3": 33.0,
+            "Total Score": 80.0,
+            "Time(min)": "32:40:00"
+        }
+    },
+    "22f3003001": {
+        "password": "22f3003001",
+        "dashboard_data": {
+            "Rank": 34,
+            "Name": "Disha Raghuwanshi",
+            "Email": "22f3003001@ds.study.iitm.ac.in",
+            "Q1 Score": NaN,
+            "Q1 Run Time(sec)": NaN,
+            "Q1 Score.1": NaN,
+            "Q1 Run Time(sec).1": NaN,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 50.0,
+            "Q1 Run Time(sec).3": 81.0,
+            "Total Score": 50.0,
+            "Time(min)": "1:20:15"
+        }
+    },
+    "akashshivu_jk": {
+        "password": "22f3001058",
+        "dashboard_data": {
+            "Rank": 35,
+            "Name": "Akash Singh J",
+            "Email": "22f3001058@ds.study.iitm.ac.in",
+            "Q1 Score": 44.44,
+            "Q1 Run Time(sec)": 26.0,
+            "Q1 Score.1": 0.0,
+            "Q1 Run Time(sec).1": 18.0,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 0.0,
+            "Q1 Run Time(sec).3": 50.0,
+            "Total Score": 44.44,
+            "Time(min)": "25:57:00"
+        }
+    },
+    "harshpalaps1": {
+        "password": "21f1002562",
+        "dashboard_data": {
+            "Rank": 36,
+            "Name": "Harsh pal",
+            "Email": "21f1002562@ds.study.iitm.ac.in",
+            "Q1 Score": NaN,
+            "Q1 Run Time(sec)": NaN,
+            "Q1 Score.1": NaN,
+            "Q1 Run Time(sec).1": NaN,
+            "Q1 Score.2": NaN,
+            "Q1 Run Time(sec).2": NaN,
+            "Q1 Score.3": 20.0,
+            "Q1 Run Time(sec).3": 36.0,
+            "Total Score": 20.0,
+            "Time(min)": "35:49:00"
+        }
+    },
+    "21f1001527": {
+        "password": "21f1001527",
+        "dashboard_data": {
+            "Rank": 37,
+            "Name": "Poojitha R",
+            "Email": "21f1001527@ds.study.iitm.ac.in",
+            "Q1 Score": NaN,
+            "Q1 Run Time(sec)": NaN,
+            "Q1 Score.1": NaN,
+            "Q1 Run Time(sec).1": NaN,
+            "Q1 Score.2": 0.0,
+            "Q1 Run Time(sec).2": 12.0,
+            "Q1 Score.3": NaN,
+            "Q1 Run Time(sec).3": NaN,
+            "Total Score": 0.0,
+            "Time(min)": "0:00"
+        }
+    },
+    "ud9211": {
+        "password": "21f3002636",
+        "dashboard_data": {
+            "Rank": 38,
+            "Name": "Syam Karni Datta Uppalapati",
+            "Email": "21f3002636@ds.study.iitm.ac.in",
+            "Q1 Score": NaN,
+            "Q1 Run Time(sec)": NaN,
+            "Q1 Score.1": NaN,
+            "Q1 Run Time(sec).1": NaN,
+            "Q1 Score.2": 0.0,
+            "Q1 Run Time(sec).2": 10.0,
+            "Q1 Score.3": NaN,
+            "Q1 Run Time(sec).3": NaN,
+            "Total Score": 0.0,
+            "Time(min)": "0:00"
+        }
     }
-  },
-  "jane_doe": {
-    "password": "mypassword",
-    "dashboard_data": {
-      "greeting": "Welcome back, Jane!",
-      "activity": "Your account balance is $1,200."
-    }
-  }
 }
