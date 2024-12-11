@@ -1,47 +1,10 @@
-{% extends "base.html" %} {% block title %}Leaderboard{% endblock %} {% block
-content %}
-<div class="container">
-      <div class="bg-light p-4">
-        <div>
-          <h1 class="h4">Welcome, {{ username }}!</h1>
-          <h1 class="display-6">SPC DSA-Series Contest Leader Board</h1>
-          <table class="table table-hover" id="marksTable">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Maths</th>
-                <th>Physics</th>
-                <th>DSA</th>
-              </tr>
-            </thead>
-            <tbody>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  <script>
-        const students = [
-            {'name': 'Praneeth', 'maths': 55, 'physics': 60, 'dsa': 70},
-            {'name': 'Anjali', 'maths': 88, 'physics': 92, 'dsa': 85},
-            {'name': 'Karthik', 'maths': 77, 'physics': 80, 'dsa': 85},
-            {'name': 'Sanya', 'maths': 92, 'physics': 85, 'dsa': 90},
-            {'name': 'Nikhil', 'maths': 65, 'physics': 78, 'dsa': 60}
-        ];
-        const tableBody = document.querySelector('#marksTable tbody');
-        students.forEach(function(student) {
-            const row = document.createElement('tr');
-            const nameCell = document.createElement('td');
-            nameCell.textContent = student.name;
-            row.appendChild(nameCell);
-            Object.keys(student).forEach(function(subject) {
-                if (subject !== 'name') { // Skip the 'name' key
-                    const subjectCell = document.createElement('td');
-                    subjectCell.textContent = student[subject];
-                    row.appendChild(subjectCell);
-                }
-            });
-            tableBody.appendChild(row);
-        });
-    </script>
-{% endblock %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>{{ dashboard_data.greeting }}</h1>
+    <p>{{ dashboard_data.activity }}</p>
+</body>
+</html>
