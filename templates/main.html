@@ -13,7 +13,7 @@
             color: #333;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             padding: 0 2rem;
             height: 100%;
             overflow-y: auto; /* Allow scrolling */
@@ -33,6 +33,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             height: auto;
             text-align: center;
+            margin-top: 50px; /* Adds space from the top */
         }
 
         /* Header Section */
@@ -42,7 +43,6 @@
             padding: 1.5rem 2rem;
             border-radius: 8px;
             width: 100%;
-            margin-bottom: 2rem;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
@@ -56,12 +56,17 @@
 
         /* Date & Time at the Top Right */
         .date-time {
-            position: absolute;
+            position: fixed; /* Keeps it fixed at the top */
             top: 20px;
             right: 20px;
             font-size: 1rem;
             color: #555;
             font-weight: bold;
+            z-index: 1000; /* Ensures it stays on top */
+            background-color: white; /* Optional: add a background for contrast */
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         /* Data Card */
@@ -136,6 +141,11 @@
 </head>
 <body>
 
+<!-- Display Current Date & Time -->
+<div class="date-time" id="dateTime">
+    <!-- Time will be dynamically updated -->
+</div>
+
 <div class="dashboard-container">
     <!-- Header Section -->
     <div class="header">
@@ -144,7 +154,7 @@
 
     <!-- Greeting Section -->
     <div class="greeting">
-        <h2>Welcome {{ dashboard_data.Name }} </h2>
+        <h2>Welcome {{ dashboard_data.Name }}! </h2>
     </div>
 
     <!-- Data Card Section -->
@@ -205,11 +215,6 @@
         <p>Thank you for participating in the SPC DSA Contest 1. All results are final!</p>
     </div>
 
-</div>
-
-<!-- Display Current Date & Time -->
-<div class="date-time" id="dateTime">
-    <!-- Time will be dynamically updated -->
 </div>
 
 <script>
