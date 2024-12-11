@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <style>
+        /* General Body Style */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -15,9 +16,10 @@
             align-items: center;
             height: 100vh;
             padding: 0 2rem;
+            overflow: hidden;
         }
 
-        /* Fullscreen container */
+        /* Dashboard Container */
         .dashboard-container {
             display: flex;
             flex-direction: column;
@@ -33,6 +35,7 @@
             text-align: center;
         }
 
+        /* Header Section */
         .header {
             background-color: #4CAF50;
             color: white;
@@ -43,6 +46,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
+        /* Greeting and User Info */
         .greeting {
             font-size: 1.5rem;
             color: #4CAF50;
@@ -50,12 +54,17 @@
             font-weight: bold;
         }
 
+        /* Date & Time at the Top Right */
         .date-time {
+            position: absolute;
+            top: 20px;
+            right: 20px;
             font-size: 1rem;
             color: #555;
-            margin-bottom: 2rem;
+            font-weight: bold;
         }
 
+        /* Data Card */
         .data-card {
             background-color: #ffffff;
             border-radius: 8px;
@@ -64,6 +73,12 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 700px;
+            transition: all 0.3s ease;
+        }
+
+        .data-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
         .data-card h3 {
@@ -73,19 +88,21 @@
             text-align: left;
         }
 
-        .data-card p {
-            font-size: 1rem;
-            color: #555;
-            margin-bottom: 0.6rem;
-            text-align: left;
-        }
-
-        /* Styling for each data block */
         .data-block {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .data-block:hover {
+            background-color: #eaf7e6;
+            transform: scale(1.02);
         }
 
         .data-block span {
@@ -93,13 +110,20 @@
             color: #333;
         }
 
+        .data-block .value {
+            font-size: 1.1rem;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        /* Footer Section */
         .footer {
             margin-top: 2rem;
             font-size: 1rem;
             color: #555;
         }
 
-        /* Responsive design */
+        /* Responsive Design */
         @media (max-width: 768px) {
             .dashboard-container {
                 padding: 1.5rem;
@@ -118,60 +142,58 @@
         <h1>SPC DSA Contest 1 Results</h1>
     </div>
 
-    <!-- Greeting & Date Section -->
+    <!-- Greeting Section -->
     <div class="greeting">
         <h2>Welcome {{ dashboard_data.Name }} ({{ dashboard_data.Email }})</h2>
-    </div>
-    <div class="date-time">
-        <p>Today's Date & Time: {{ current_time }}</p>
     </div>
 
     <!-- Data Card Section -->
     <div class="data-card">
         <h3>Contest Results</h3>
+
         <div class="data-block">
             <span>Rank:</span>
-            <span>{{ dashboard_data.Rank }}</span>
+            <span class="value">{{ dashboard_data.Rank }}</span>
         </div>
         <div class="data-block">
             <span>Q1 Score:</span>
-            <span>{{ dashboard_data['Q1 Score'] }}</span>
+            <span class="value">{{ dashboard_data['Q1 Score'] }}</span>
         </div>
         <div class="data-block">
             <span>Q1 Run Time (sec):</span>
-            <span>{{ dashboard_data['Q1 Run Time(sec)'] }}</span>
+            <span class="value">{{ dashboard_data['Q1 Run Time(sec)'] }}</span>
         </div>
         <div class="data-block">
             <span>Q2 Score:</span>
-            <span>{{ dashboard_data['Q2 Score'] }}</span>
+            <span class="value">{{ dashboard_data['Q2 Score'] }}</span>
         </div>
         <div class="data-block">
             <span>Q2 Run Time (sec):</span>
-            <span>{{ dashboard_data['Q2 Run Time(sec)'] }}</span>
+            <span class="value">{{ dashboard_data['Q2 Run Time(sec)'] }}</span>
         </div>
         <div class="data-block">
             <span>Q3 Score:</span>
-            <span>{{ dashboard_data['Q3 Score'] }}</span>
+            <span class="value">{{ dashboard_data['Q3 Score'] }}</span>
         </div>
         <div class="data-block">
             <span>Q3 Run Time (sec):</span>
-            <span>{{ dashboard_data['Q3 Run Time(sec)'] }}</span>
+            <span class="value">{{ dashboard_data['Q3 Run Time(sec)'] }}</span>
         </div>
         <div class="data-block">
             <span>Q4 Score:</span>
-            <span>{{ dashboard_data['Q4 Score'] }}</span>
+            <span class="value">{{ dashboard_data['Q4 Score'] }}</span>
         </div>
         <div class="data-block">
             <span>Q4 Run Time (sec):</span>
-            <span>{{ dashboard_data['Q4 Run Time(sec)'] }}</span>
+            <span class="value">{{ dashboard_data['Q4 Run Time(sec)'] }}</span>
         </div>
         <div class="data-block">
             <span>Total Score:</span>
-            <span>{{ dashboard_data['Total Score'] }}</span>
+            <span class="value">{{ dashboard_data['Total Score'] }}</span>
         </div>
         <div class="data-block">
             <span>Time (min):</span>
-            <span>{{ dashboard_data['Time(min)'] }}</span>
+            <span class="value">{{ dashboard_data['Time(min)'] }}</span>
         </div>
     </div>
 
@@ -179,7 +201,25 @@
     <div class="footer">
         <p>Thank you for participating in the SPC DSA Contest 1. All results are final!</p>
     </div>
+
 </div>
+
+<!-- Display Current Date & Time -->
+<div class="date-time" id="dateTime">
+    <!-- Time will be dynamically updated -->
+</div>
+
+<script>
+    // Function to update the current time dynamically
+    function updateTime() {
+        const currentDateTime = new Date();
+        const formattedTime = currentDateTime.toLocaleString();
+        document.getElementById('dateTime').innerHTML = `Date & Time: ${formattedTime}`;
+    }
+
+    // Update time every second
+    setInterval(updateTime, 1000);
+</script>
 
 </body>
 </html>
