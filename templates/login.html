@@ -1,45 +1,19 @@
-{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
-%}
-<div class="container-sm mt-5">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-header text-center">
-            <h4 class="display-6">Login</h4>
-          </div>
-          <div class="card-body">
-            <form method="POST" action="/login">
-              <div class="form-group">
-                <label for="username">Email address</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="username"
-                    name="username"
-                  required
-                  placeholder="Enter your email"
-                />
-              </div>
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password"
-                    name="password"
-                  required
-                  placeholder="Enter your password"
-                />
-              </div>
-              <br />
-              <button type="submit" class="btn btn-primary btn-block">
-                Login
-              </button>
-              <br />
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-{% endblock %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <form action="/dashboard" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <button type="submit">Login</button>
+    </form>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
