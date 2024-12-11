@@ -1,14 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0 2rem;
+        }
+
+        /* Fullscreen container */
+        .dashboard-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            max-width: 1000px;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            height: auto;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            width: 100%;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .greeting {
+            font-size: 1.5rem;
+            color: #4CAF50;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+
+        .date-time {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .data-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 1rem 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .data-card h3 {
+            color: #4CAF50;
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+            text-align: left;
+        }
+
+        .data-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 0.6rem;
+            text-align: left;
+        }
+
+        /* Styling for each data block */
+        .data-block {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .data-block span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .dashboard-container {
+                padding: 1.5rem;
+            }
+            .data-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>{{ dashboard_data["Name"] }}</h1>
-    <p>{{ dashboard_data["Email"] }}</p>
-    <p>{{ dashboard_data["Q1 Score"] }}</p>
-    <p>{{ dashboard_data["Q2 Score"] }}</p>
-     <p>{{ dashboard_data["Q3 Score"] }}</p>
-     <p>{{ dashboard_data["Q4 Score"] }}</p>
+
+<div class="dashboard-container">
+    <!-- Header Section -->
+    <div class="header">
+        <h1>SPC DSA Contest 1 Results</h1>
+    </div>
+
+    <!-- Greeting & Date Section -->
+    <div class="greeting">
+        <h2>Welcome {{ dashboard_data.Name }} ({{ dashboard_data.Email }})</h2>
+    </div>
+    <div class="date-time">
+        <p>Today's Date & Time: {{ current_time }}</p>
+    </div>
+
+    <!-- Data Card Section -->
+    <div class="data-card">
+        <h3>Contest Results</h3>
+        <div class="data-block">
+            <span>Rank:</span>
+            <span>{{ dashboard_data.Rank }}</span>
+        </div>
+        <div class="data-block">
+            <span>Q1 Score:</span>
+            <span>{{ dashboard_data['Q1 Score'] }}</span>
+        </div>
+        <div class="data-block">
+            <span>Q1 Run Time (sec):</span>
+            <span>{{ dashboard_data['Q1 Run Time(sec)'] }}</span>
+        </div>
+        <div class="data-block">
+            <span>Q2 Score:</span>
+            <span>{{ dashboard_data['Q2 Score'] }}</span>
+        </div>
+        <div class="data-block">
+            <span>Q2 Run Time (sec):</span>
+            <span>{{ dashboard_data['Q2 Run Time(sec)'] }}</span>
+        </div>
+        <div class="data-block">
+            <span>Q3 Score:</span>
+            <span>{{ dashboard_data['Q3 Score'] }}</span>
+        </div>
+        <div class="data-block">
+            <span>Q3 Run Time (sec):</span>
+            <span>{{ dashboard_data['Q3 Run Time(sec)'] }}</span>
+        </div>
+        <div class="data-block">
+            <span>Q4 Score:</span>
+            <span>{{ dashboard_data['Q4 Score'] }}</span>
+        </div>
+        <div class="data-block">
+            <span>Q4 Run Time (sec):</span>
+            <span>{{ dashboard_data['Q4 Run Time(sec)'] }}</span>
+        </div>
+        <div class="data-block">
+            <span>Total Score:</span>
+            <span>{{ dashboard_data['Total Score'] }}</span>
+        </div>
+        <div class="data-block">
+            <span>Time (min):</span>
+            <span>{{ dashboard_data['Time(min)'] }}</span>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>Thank you for participating in the SPC DSA Contest 1. All results are final!</p>
+    </div>
+</div>
+
 </body>
 </html>
