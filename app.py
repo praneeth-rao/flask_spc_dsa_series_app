@@ -28,7 +28,7 @@ def dashboard():
     # Authenticate user
     if username in user_data and user_data[username]['password'] == password:
         dashboard_data = user_data[username]['dashboard_data']
-        return render_template('dashboard.html', dashboard_data=dashboard_data)
+        return render_template('main.html', dashboard_data=dashboard_data)
 
     # Invalid credentials
     return render_template('login.html', error="Invalid username or password")
