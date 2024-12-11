@@ -1,0 +1,16 @@
+{
+  "john_doe": {
+    "password": "password123",
+    "dashboard_data": {
+      "greeting": "Hello, John!",
+      "activity": "You have 3 new messages."
+    }
+  },
+  "jane_doe": {
+    "password": "mypassword",
+    "dashboard_data": {
+      "greeting": "Welcome back, Jane!",
+      "activity": "Your account balance is $1,200."
+    }
+  }
+}
