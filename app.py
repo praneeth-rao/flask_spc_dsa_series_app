@@ -5,11 +5,11 @@ import os
 app = Flask(__name__)
 
 # Load JSON data securely (update the path to where the file is stored on Render)
-JSON_FILE_PATH = os.getenv("JSON_FILE_PATH", "users.json")
+# JSON_FILE_PATH = os.getenv("JSON_FILE_PATH", "users.json")
 
 # Helper function to load user data
 def load_user_data():
-    with open(JSON_FILE_PATH, "r") as f:
+    with open("users.json", "r") as f:
         return json.load(f)
 
 @app.route('/')
