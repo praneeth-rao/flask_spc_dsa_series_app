@@ -144,13 +144,16 @@
 
     <!-- Greeting Section -->
     <div class="greeting">
-        <h2>Welcome {{ dashboard_data.Name }} ({{ dashboard_data.Email }})</h2>
+        <h2>Welcome {{ dashboard_data.Name }} </h2>
     </div>
 
     <!-- Data Card Section -->
     <div class="data-card">
         <h3>Contest Results</h3>
-
+        <div class="data-block">
+            <span>Student Email:</span>
+            <span class="value">{{ dashboard_data.Email }}</span>
+        </div>
         <div class="data-block">
             <span>Rank:</span>
             <span class="value">{{ dashboard_data.Rank }}</span>
